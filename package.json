@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "bundle-watch": "spago bundle-app --watch",
+    "serve": "parcel index.html --open",
+    "start": "concurrently \"npm:bundle-watch\" \"npm:serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "parcel": "2.8.3"
+  }
+}
